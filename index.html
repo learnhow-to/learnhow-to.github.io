@@ -3,317 +3,693 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fatun — Android & Python Software Engineer</title>
-  <meta name="description" content="Portfolio of Fatun, an Android & Python Software Engineer specialized in high-performance developer tooling and mobile apps.">
+  <title>Fatur — Software &amp; Automation Tools</title>
+  <meta name="description" content="Personal portfolio of Fatur. Civil construction worker based in Japan building software tools, desktop automation, and Android system companions outside work hours.">
+  <link rel="canonical" href="https://learnhow-to.github.io/">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Fatur — Software &amp; Automation Tools">
+  <meta property="og:description" content="Civil construction worker based in Japan building practical software tools and Android system companions.">
+  <meta property="og:url" content="https://learnhow-to.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fatur — Software &amp; Automation Tools">
+  <meta name="twitter:description" content="Civil construction worker based in Japan building practical software tools and Android system companions.">
+
+  <!-- Inline SVG Favicon to eliminate 404 requests -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2314171d'/><text x='16' y='22' font-family='sans-serif' font-size='18' font-weight='700' fill='%23d97736' text-anchor='middle'>F</text></svg>">
+
+  <!-- Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Background Glow Accents -->
-  <div class="bg-glow glow-1"></div>
-  <div class="bg-glow glow-2"></div>
+  <!-- Skip link for keyboard accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="#hero" class="brand-logo">
-        <span class="code-bracket">&lt;</span>Fatun<span class="code-bracket"> /&gt;</span>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#intro" class="brand" aria-label="Fatur homepage">
+        <span class="brand-name">Fatur</span>
+        <span class="brand-sub">Software &amp; Tools</span>
       </a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#case-study">Case Study</a>
-        <a href="#contact" class="btn btn-outline btn-sm">Contact Me</a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#case-study" class="nav-link">Case Study</a></li>
+          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li>
+            <a href="https://github.com/learnhow-to" target="_blank" rel="noopener noreferrer" class="nav-link nav-external">
+              GitHub
+              <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#contact" class="btn btn-sm btn-outline">Contact</a></li>
+        </ul>
       </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+        <span class="menu-icon" aria-hidden="true">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+        </span>
+      </button>
     </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <div class="container mobile-nav-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#work" class="mobile-nav-link">Work</a></li>
+          <li><a href="#case-study" class="mobile-nav-link">Case Study</a></li>
+          <li><a href="#capabilities" class="mobile-nav-link">Capabilities</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li>
+            <a href="https://github.com/learnhow-to" target="_blank" rel="noopener noreferrer" class="mobile-nav-link mobile-nav-external">
+              GitHub Profile
+              <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#contact" class="btn btn-outline mobile-contact-btn">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="container hero-content">
-      <div class="status-pill">
-        <span class="status-dot"></span> Available for Opportunities & Collaboration
-      </div>
-      <h1 class="hero-title">
-        Engineering <span class="gradient-text">High-Performance</span> Android & Desktop Tools.
-      </h1>
-      <p class="hero-subtitle">
-        Hi, I'm <strong>Fatun</strong> — an Android & Python Software Engineer. I specialize in crafting lightweight developer tooling, optimizing mobile workflows, and building cross-device experiences that solve real-world engineering bottlenecks.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">🚀 Explore Flagship Project</a>
-        <a href="#case-study" class="btn btn-secondary">📖 Read Case Study</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number">~100MB</span>
-          <span class="stat-label">Ultra-Lightweight Footprint</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">60 FPS</span>
-          <span class="stat-label">Zero-Latency Screen Stream</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">1-Click</span>
-          <span class="stat-label">Mobile QA Workflow</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Project (Flagship) Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">FEATURED WORK</span>
-        <h2 class="section-title">Flagship Project</h2>
-        <p class="section-desc">A deep dive into an advanced engineering project built from problem identification to production deployment.</p>
-      </div>
-
-      <!-- DroidMirror Card -->
-      <div class="featured-card">
-        <div class="featured-badge">⭐ Flagship Desktop Engineering</div>
-        <div class="featured-grid">
-          <div class="featured-info">
-            <h3 class="project-title">DroidMirror Studio</h3>
-            <p class="project-tagline">High-Performance Android Mirroring & Developer Testing Suite</p>
-            <p class="project-desc">
-              Built to replace sluggish, memory-hogging emulators (which consume 4–8 GB of RAM) with a lightweight, native Windows companion (~100 MB RAM). Combines zero-latency screen mirroring with automated 1-click testing actions, live crash capture, and seamless phone-to-PC integration.
-            </p>
-
-            <div class="tech-stack-pills">
-              <span class="tech-pill">Python 3.12</span>
-              <span class="tech-pill">PySide6 (Qt6)</span>
-              <span class="tech-pill">ADB Protocol</span>
-              <span class="tech-pill">scrcpy 4.1</span>
-              <span class="tech-pill">Win32 API</span>
-              <span class="tech-pill">High-DPI Scaling</span>
-            </div>
-
-            <div class="feature-bullets">
-              <div class="bullet-item">
-                <span class="bullet-icon">⚡</span>
-                <span><strong>1-Click QA Actions:</strong> Instant restart, clear app data, grant permissions, and token injection.</span>
-              </div>
-              <div class="bullet-item">
-                <span class="bullet-icon">📱</span>
-                <span><strong>Independent Floating Window:</strong> Draggable, freely resizable phone screen with Always on Top & Screen-Off power saving.</span>
-              </div>
-              <div class="bullet-item">
-                <span class="bullet-icon">🌐</span>
-                <span><strong>Seamless PC ↔ Phone:</strong> Universal file drop (auto-routed to Gallery/Downloads), Spotify/media controls, and clipboard sync.</span>
-              </div>
-              <div class="bullet-item">
-                <span class="bullet-icon">🪵</span>
-                <span><strong>Live Crash Catcher:</strong> Real-time logcat streaming with instant red FATAL exception highlighting and 1-click stacktrace export.</span>
-              </div>
-            </div>
-
-            <div class="card-actions">
-              <button class="btn btn-primary" onclick="openModal('case-study-modal')">🔍 View Full Case Study</button>
-              <a href="https://github.com/learnhow-to/droid-mirror-studio" target="_blank" class="btn btn-secondary">📦 Source Code on GitHub</a>
-            </div>
-          </div>
-
-          <div class="featured-preview">
-            <div class="mockup-window">
-              <div class="mockup-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="mockup-title">DroidMirror Studio — Testing Toolbox</span>
-              </div>
-              <div class="mockup-body">
-                <div class="mockup-device-bar">
-                  <span>📱 Pixel 8 Pro [Wi-Fi]</span>
-                  <span class="mockup-badge">🔋 92%</span>
-                  <span class="mockup-badge">🌐 192.168.1.105</span>
-                </div>
-                <div class="mockup-hero-btn">
-                  🚀 Launch Floating Phone Window
-                </div>
-                <div class="mockup-tabs">
-                  <span class="tab active">⚡ App Testing</span>
-                  <span class="tab">🎮 Nav & Keys</span>
-                  <span class="tab">🌐 Seamless Hub</span>
-                  <span class="tab">📸 Capture</span>
-                </div>
-                <div class="mockup-code-card">
-                  <div class="code-line"><span class="c-blue">Package:</span> com.example.myawesomeapp</div>
-                  <div class="code-line"><span class="c-green">[✔] Clear Data</span> <span class="c-purple">[✔] Restart</span> <span class="c-yellow">[✔] Grant Perms</span></div>
-                  <div class="code-line c-red">09-12 10:04:15.120 E AndroidRuntime: FATAL EXCEPTION!</div>
-                  <div class="code-line c-gray">&gt; 1-Click Copy Stacktrace to Clipboard</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Skills Matrix -->
-  <section id="skills" class="section bg-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">CAPABILITIES</span>
-        <h2 class="section-title">Technical Expertise</h2>
-        <p class="section-desc">Tools, frameworks, and system-level proficiencies applied across production projects.</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">🤖</div>
-          <h3 class="skill-category">Android Engineering</h3>
-          <ul class="skill-list">
-            <li>Android SDK & Architecture Components</li>
-            <li>ADB Automation & Shell Protocol</li>
-            <li>Wireless Debugging (mDNS & TLS Pairing)</li>
-            <li>Scoped Storage & MediaStore Architecture</li>
-            <li>Hardware Codec (MediaCodec H.264/H.265)</li>
-            <li>Lifecycle & Permission Management</li>
-          </ul>
+  <main id="main-content">
+    <!-- Intro / Hero Section -->
+    <section id="intro" class="section section-intro">
+      <div class="container">
+        <div class="intro-eyebrow">
+          <span class="badge badge-accent">CIVIL CONSTRUCTION WORKER &bull; SOFTWARE BUILDER</span>
+          <span class="location-tag">Based in Japan</span>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🐍</div>
-          <h3 class="skill-category">Python & Desktop GUI</h3>
-          <ul class="skill-list">
-            <li>PySide6 / PyQt (Qt for Python)</li>
-            <li>Asynchronous I/O & Multithreading (QThread)</li>
-            <li>Win32 API (`user32.dll`, HWND Manipulation)</li>
-            <li>High-DPI Display Scaling & Resolution</li>
-            <li>Subprocess Orchestration & IPC</li>
-            <li>Automated Testing & PyTest</li>
-          </ul>
-        </div>
+        <h1 class="intro-headline">
+          Building practical tools that eliminate repetitive work between Android devices and Windows.
+        </h1>
 
-        <div class="skill-card">
-          <div class="skill-icon">🛠️</div>
-          <h3 class="skill-category">Tooling & Engineering Practices</h3>
-          <ul class="skill-list">
-            <li>Git Version Control & Workflow</li>
-            <li>scrcpy Core Engine Customization</li>
-            <li>Logcat & Crash Stacktrace Analysis</li>
-            <li>Performance & Memory Profiling</li>
-            <li>Cross-Device Seamless Integration</li>
-            <li>Clean, Maintainable Architecture</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Case Study Breakdown Section -->
-  <section id="case-study" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">ENGINEERING SPOTLIGHT</span>
-        <h2 class="section-title">Case Study: DroidMirror Studio</h2>
-        <p class="section-desc">How a real developer friction point was transformed into an optimized desktop tool using the STAR method.</p>
-      </div>
-
-      <div class="star-grid">
-        <div class="star-card">
-          <div class="star-badge s-tag">SITUATION</div>
-          <h4>The Problem</h4>
-          <p>Official Android Studio AVD emulators are resource monsters, commonly hogging 4–8 GB of RAM and causing severe lag on development laptops. Testing on physical devices was safe from RAM spikes but introduced constant friction: manual typing of terminal ADB commands, cable juggling, and screen checking.</p>
-        </div>
-
-        <div class="star-card">
-          <div class="star-badge t-tag">TASK</div>
-          <h4>The Objective</h4>
-          <p>Architect and develop a standalone, ultra-lightweight Windows companion capable of: zero-latency 60FPS phone mirroring, 1-click test actions (restart, clear cache, permissions), seamless file synchronization, and real-time crash capture — consuming under 120MB RAM.</p>
-        </div>
-
-        <div class="star-card">
-          <div class="star-badge a-tag">ACTION</div>
-          <h4>The Engineering</h4>
-          <p>Engineered a desktop suite with Python 3.12 and PySide6. Integrated `scrcpy`'s MediaCodec video pipeline, abstracted ADB daemon communications with dedicated worker threads to prevent UI lockups, handled Windows High-DPI scaling via Win32 API, and built an automated Android notification dispatcher.</p>
-        </div>
-
-        <div class="star-card">
-          <div class="star-badge r-tag">RESULT</div>
-          <h4>The Impact</h4>
-          <p>Achieved a ~100MB RAM footprint (up to <strong>80x lighter than an emulator</strong>), instantaneous 60 FPS interaction with mouse/keyboard, a 75% reduction in repetitive QA testing clicks, and seamless everyday phone-to-PC file transfer with instant gallery indexing.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & CTA Section -->
-  <section id="contact" class="section bg-alt">
-    <div class="container contact-container">
-      <div class="contact-card">
-        <h2 class="contact-title">Let's Build Something Exceptional</h2>
-        <p class="contact-desc">
-          Interested in discussing a project, hiring for a software engineering role, or collaborating on developer tools? Reach out directly!
+        <p class="intro-lead">
+          I'm Fatur. By day, I work in civil construction on infrastructure projects in Japan. Outside work hours, I study software engineering and build automation tools to solve practical bottlenecks—focusing on desktop systems, Android internals, and cross-device workflows.
         </p>
 
-        <div class="contact-actions">
-          <button class="btn btn-primary" id="copy-email-btn" onclick="copyEmail()">
-            📋 Copy Email (<span id="email-text">faturahon@gmail.com</span>)
-          </button>
-          <a href="mailto:faturahon@gmail.com" class="btn btn-secondary">✉️ Open Email Client</a>
+        <div class="intro-actions">
+          <a href="#work" class="btn btn-primary">Explore DroidMirror Studio</a>
+          <a href="#case-study" class="btn btn-secondary">Read Case Study</a>
+          <a href="https://github.com/learnhow-to" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            GitHub (learnhow-to)
+            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
         </div>
 
-        <div class="contact-links">
-          <a href="https://github.com/learnhow-to" target="_blank" class="contact-link">GitHub (learnhow-to)</a>
-          <span class="link-dot">•</span>
-          <a href="https://linkedin.com" target="_blank" class="contact-link">LinkedIn</a>
-          <span class="link-dot">•</span>
-          <a href="#hero" class="contact-link">Back to Top ↑</a>
+        <div class="project-summary-box">
+          <div class="summary-col">
+            <span class="summary-label">CURRENT PROJECT</span>
+            <span class="summary-val">DroidMirror Studio</span>
+          </div>
+          <div class="summary-col">
+            <span class="summary-label">STAGE</span>
+            <span class="summary-val">Functional Prototype (v0.2)</span>
+          </div>
+          <div class="summary-col">
+            <span class="summary-label">CORE STACK</span>
+            <span class="summary-val">Python 3.12 &bull; PySide6 &bull; scrcpy &bull; ADB</span>
+          </div>
+          <div class="summary-col">
+            <span class="summary-label">HOST PLATFORM</span>
+            <span class="summary-val">Windows 10 / 11 (64-bit)</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Fatun. Designed and engineered with precision.</p>
-      <p class="footer-sub">Built with semantic HTML5, CSS3, & Vanilla JS. Zero heavy dependencies.</p>
+    <!-- Featured Project: DroidMirror Studio -->
+    <section id="work" class="section section-work">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">FEATURED PROJECT</span>
+          <h2 class="section-title">DroidMirror Studio</h2>
+          <p class="section-subtitle">
+            A native Windows testing toolbox and screen mirroring companion for physical Android devices.
+          </p>
+        </header>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div>
+              <span class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Functional Desktop Prototype &bull; Open Source</span>
+              </span>
+              <h3 class="project-name">Companion Testing Toolbox &amp; Seamless Hub</h3>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/learnhow-to/droid-mirror-studio" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                Source Code
+                <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-narrative">
+              <h4>The Problem</h4>
+              <p>
+                Testing applications on physical Android devices is necessary to catch authentic regressions (OEM battery optimization, camera hardware, biometric sensors, and wireless connectivity). However, working with a physical device creates constant friction:
+              </p>
+              <ul class="narrative-list">
+                <li>Repetitive manual entry of terminal ADB commands (app restarts, cache clearing, permission toggles).</li>
+                <li>Pushed files end up in deep directories where native gallery apps fail to index them without a device restart.</li>
+                <li>Official Android Studio emulators (AVD) consume 2 to 4 GB of RAM, causing heavy lag on non-workstation laptops.</li>
+              </ul>
+
+              <h4>The Solution</h4>
+              <p>
+                DroidMirror Studio delegates hardware-accelerated screen mirroring to the battle-tested <code>scrcpy</code> engine while orchestrating a clean PySide6 control deck on top. In approximately 100 MB of total desktop memory, it provides immediate 1-click test actions, universal file drag-and-drop with MediaStore indexing broadcasts, and real-time crash capture.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tag">Python 3.12</span>
+                <span class="tag">PySide6 (Qt6)</span>
+                <span class="tag">scrcpy 4.1</span>
+                <span class="tag">Android Debug Bridge (ADB)</span>
+                <span class="tag">Win32 API</span>
+                <span class="tag">QThread Concurrency</span>
+              </div>
+            </div>
+
+            <!-- Feature Classification Matrix -->
+            <div class="feature-status-panel">
+              <h4 class="feature-panel-title">Implementation Status Breakdown</h4>
+              
+              <div class="feature-group">
+                <div class="feature-status-badge status-verified">VERIFIED &amp; FUNCTIONAL</div>
+                <ul class="feature-item-list">
+                  <li><strong>Scrcpy Mirroring:</strong> Low-latency H.264/H.265 hardware video stream with mouse and keyboard passthrough.</li>
+                  <li><strong>Async ADB Worker Pipeline:</strong> Subprocess execution routed via <code>QThread</code> to keep the GUI responsive during I/O.</li>
+                  <li><strong>1-Click App Testing:</strong> App restart, data and cache wipe, runtime permission granting, and auth token text injection.</li>
+                  <li><strong>Virtual Hardware Keys:</strong> Back, Home, Recents, Power lock, Volume, and Notification shade expansion.</li>
+                  <li><strong>Smart File Push:</strong> Category routing to <code>/sdcard/Pictures/</code> and <code>/sdcard/Movies/</code> followed by <code>MEDIA_SCANNER_SCAN_FILE</code> broadcast and physical banner notification.</li>
+                  <li><strong>Crash Catcher:</strong> Live logcat stream parser detecting <code>FATAL EXCEPTION</code> and <code>AndroidRuntime</code> with 1-click clipboard export.</li>
+                  <li><strong>High-DPI Scaling:</strong> Win32 <code>SetWindowPos</code> coordinate adjustments for 125%–200% display scaling.</li>
+                </ul>
+              </div>
+
+              <div class="feature-group">
+                <div class="feature-status-badge status-experimental">EXPERIMENTAL / DEVICE-DEPENDENT</div>
+                <ul class="feature-item-list">
+                  <li><strong>Screen Recording:</strong> Powered by <code>adb shell screenrecord</code> (subject to Android version duration limits and OEM encoder support).</li>
+                  <li><strong>Pull Recent Photos:</strong> Direct inspection of <code>/sdcard/DCIM/Camera</code> (file naming variations across custom OEM ROMs like MIUI or ColorOS).</li>
+                  <li><strong>Wireless Pairing Dialog:</strong> Manual entry of mDNS pairing code and port.</li>
+                </ul>
+              </div>
+
+              <div class="feature-group">
+                <div class="feature-status-badge status-roadmap">ROADMAP / NOT YET IMPLEMENTED</div>
+                <ul class="feature-item-list">
+                  <li>Multi-device concurrent mirroring grid.</li>
+                  <li>Cross-platform packaging for Linux and macOS.</li>
+                  <li>Touch macro recorder and automated regression replay.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <button type="button" class="btn btn-primary" id="open-case-study-btn">
+              Read Engineering Case Study &amp; Trade-offs
+            </button>
+            <a href="https://github.com/learnhow-to/droid-mirror-studio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              View Repository on GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Engineering Case Study Section -->
+    <section id="case-study" class="section section-case-study">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">ENGINEERING LOGBOOK</span>
+          <h2 class="section-title">Technical Case Study</h2>
+          <p class="section-subtitle">
+            Detailed breakdown of architectural decisions, engineering constraints, trade-offs, and verified local benchmark measurements.
+          </p>
+        </header>
+
+        <div class="case-study-content">
+          <!-- 1. Context & Constraints -->
+          <article class="case-section">
+            <h3 class="case-heading">1. Context, Constraints &amp; Goals</h3>
+            <p>
+              When testing Android software on physical hardware, an engineer frequently switches context between three windows: the code editor, the terminal running ADB commands, and the physical handset screen.
+            </p>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Constraint</th>
+                    <th scope="col">Requirement</th>
+                    <th scope="col">Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Host Resource Footprint</td>
+                    <td>Keep total RAM consumption &le; 120 MB</td>
+                    <td>Allows the tool to run continuously alongside heavy IDEs without degrading host system performance.</td>
+                  </tr>
+                  <tr>
+                    <td>Mirroring Responsiveness</td>
+                    <td>Low-latency 60 FPS video &amp; keyboard/mouse passthrough</td>
+                    <td>Manual test iterations require immediate tactile feedback.</td>
+                  </tr>
+                  <tr>
+                    <td>Thread Safety</td>
+                    <td>Zero GUI freeze during ADB I/O</td>
+                    <td>Subprocess timeouts or slow network ADB calls must not block the Qt event loop.</td>
+                  </tr>
+                  <tr>
+                    <td>Android Storage Sync</td>
+                    <td>Immediate Gallery indexing for transferred media</td>
+                    <td>Avoids manual reboots or app restarts after pushing test assets.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <!-- 2. Technical Decisions & Trade-offs -->
+          <article class="case-section">
+            <h3 class="case-heading">2. Architectural Decisions &amp; Trade-offs</h3>
+            <div class="decision-grid">
+              <div class="decision-card">
+                <span class="decision-label">DECISION A</span>
+                <h4>PySide6 (Qt6) over Electron / Webview</h4>
+                <p>
+                  <strong>Choice:</strong> Built as a native desktop application in Python 3.12 with PySide6.
+                </p>
+                <p>
+                  <strong>Rationale &amp; Trade-off:</strong> Electron wraps a full Chromium runtime and Node.js process, typically demanding 250–500 MB of RAM before running application code. PySide6 starts cleanly in under 45 MB of RAM and integrates directly with OS-level subprocesses and threading primitives. The trade-off is higher styling discipline compared to CSS flexbox, but memory efficiency was prioritized.
+                </p>
+              </div>
+
+              <div class="decision-card">
+                <span class="decision-label">DECISION B</span>
+                <h4>Delegating Video Stream to scrcpy Engine</h4>
+                <p>
+                  <strong>Choice:</strong> Orchestrating external <code>scrcpy</code> process instead of building a custom C++ H.264 decoder.
+                </p>
+                <p>
+                  <strong>Rationale &amp; Trade-off:</strong> <code>scrcpy</code> has over seven years of active optimization by Genymobile, utilizing device-native Android <code>MediaCodec</code> hardware encoding. Re-implementing a custom decoder inside Python would introduce unnecessary CPU decoding latency and stability risks. Orchestrating scrcpy via managed subprocess flags allows the application to leverage mature hardware acceleration while focusing engineering effort on the testing workflow layer.
+                </p>
+              </div>
+
+              <div class="decision-card">
+                <span class="decision-label">DECISION C</span>
+                <h4>High-DPI Coordinate Handling via Win32 API</h4>
+                <p>
+                  <strong>Choice:</strong> Integrated <code>ctypes.windll.user32</code> to calculate physical device pixels.
+                </p>
+                <p>
+                  <strong>Rationale &amp; Trade-off:</strong> Modern Windows laptops use 125% to 200% DPI scaling. Passing raw logical Qt window coordinates to external window wrappers caused the mirrored display to render in a quartered or distorted frame. Multiplying by <code>devicePixelRatioF()</code> and issuing <code>SetWindowPos</code> with <code>SWP_FRAMECHANGED</code> forced an SDL surface resize, guaranteeing crisp, pixel-perfect rendering.
+                </p>
+              </div>
+
+              <div class="decision-card">
+                <span class="decision-label">DECISION D</span>
+                <h4>Scoped Storage &amp; Broadcast Synchronization</h4>
+                <p>
+                  <strong>Choice:</strong> Implemented MIME-type routing and automated <code>MEDIA_SCANNER_SCAN_FILE</code> broadcasts.
+                </p>
+                <p>
+                  <strong>Rationale &amp; Trade-off:</strong> On Android 10+ (API 29+), raw byte writes to <code>/sdcard/Download/</code> remain invisible to the native MediaStore content provider until indexed. By routing images to <code>/sdcard/Pictures/</code>, videos to <code>/sdcard/Movies/</code>, and broadcasting intent scans, pushed photos become instantly visible inside the Android Gallery app.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Verified Benchmark Data -->
+          <article class="case-section">
+            <h3 class="case-heading">3. Verified Local Benchmark Data</h3>
+            <p class="case-intro-text">
+              The following metrics were measured locally on a Windows 11 development workstation with a physical Android device connected over Wireless ADB (mDNS TLS). Data was collected using Windows Task Manager process statistics and automated test executions.
+            </p>
+
+            <div class="benchmark-meta-box">
+              <div class="meta-row">
+                <span class="meta-key">OS Version:</span>
+                <span class="meta-val">Windows 11 Home 64-bit (Build 22631)</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-key">Runtime Environment:</span>
+                <span class="meta-val">Python 3.12.9 (64-bit), PySide6 6.8.2.1, scrcpy 4.1</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-key">Connected Device:</span>
+                <span class="meta-val">Physical Android Handset (Android 14)</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-key">Connection Method:</span>
+                <span class="meta-val">Wireless ADB over 5GHz Wi-Fi (TLS Pairing)</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-key">Measurement Date:</span>
+                <span class="meta-val">September 2026</span>
+              </div>
+            </div>
+
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Component / Metric</th>
+                    <th scope="col">Measured Value</th>
+                    <th scope="col">Baseline Comparison (Android Studio AVD)</th>
+                    <th scope="col">Method &amp; Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>PySide6 Dashboard RAM</strong></td>
+                    <td><code>~38 MB</code></td>
+                    <td rowspan="3"><code>2,048 MB &ndash; 4,096 MB</code><br><span class="table-sub">(Standard Google APIs AVD system image)</span></td>
+                    <td>Private working set measured via Task Manager.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>scrcpy Mirroring Process RAM</strong></td>
+                    <td><code>~68 MB</code></td>
+                    <td>Hardware-accelerated H.264 video decoding process.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Total Combined RAM Footprint</strong></td>
+                    <td><code>~106 MB</code></td>
+                    <td>Combined footprint of dashboard + streaming companion.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mirroring Frame Rate</strong></td>
+                    <td><code>Up to 60 FPS</code></td>
+                    <td><code>30 &ndash; 45 FPS</code> (varies with host GPU emulation)</td>
+                    <td>Stable over 5GHz Wi-Fi; bounded by device screen refresh rate.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>App Reset Turnaround</strong></td>
+                    <td><code>~1.2 seconds</code></td>
+                    <td><code>~40 seconds</code> (manual device taps &amp; terminal typing)</td>
+                    <td>Single-click stop + clear cache + relaunch sequence.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>File Push to Gallery Index</strong></td>
+                    <td><code>&lt; 2 seconds</code></td>
+                    <td>Requires device reboot or file manager browse</td>
+                    <td>Push + <code>MEDIA_SCANNER_SCAN_FILE</code> broadcast execution.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Crash Capture Latency</strong></td>
+                    <td><code>Immediate (&lt; 200ms)</code></td>
+                    <td>Manual logcat filtering in terminal</td>
+                    <td>QThread regex buffer accumulator isolating fatal stacktrace.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="benchmark-disclaimer">
+              <em>Note on comparison:</em> Baseline comparison references an active Android Studio Virtual Device (Pixel 8 system image) running on the same host machine. Memory usage and streaming framerates will vary depending on network congestion, host hardware, and device OEM software.
+            </p>
+          </article>
+
+          <!-- 4. Current Limitations & Next Steps -->
+          <article class="case-section">
+            <h3 class="case-heading">4. Known Limitations &amp; Next Engineering Steps</h3>
+            <div class="limitations-grid">
+              <div class="limitation-card">
+                <h4>Current Limitations</h4>
+                <ul>
+                  <li><strong>Host Dependencies:</strong> Requires local installation of <code>adb.exe</code> and <code>scrcpy.exe</code> (auto-discovered from PATH, WinGet, or Android SDK).</li>
+                  <li><strong>Platform Target:</strong> Window management and process handling currently rely on Windows Win32 flags.</li>
+                  <li><strong>Network Sensitivity:</strong> Wireless mirroring requires a stable 5GHz Wi-Fi network; 2.4GHz bands can suffer from frame drops during high-motion scenes.</li>
+                  <li><strong>Audio Forwarding:</strong> Forwarding device audio to PC speakers requires Android 11+ (API 30+).</li>
+                </ul>
+              </div>
+
+              <div class="limitation-card">
+                <h4>Next Engineering Steps</h4>
+                <ul>
+                  <li><strong>Automated Test Expansion:</strong> Expand unit test coverage for ADB stdout parser edge cases across older Android versions (API 26–28).</li>
+                  <li><strong>Cross-Platform Abstraction:</strong> Abstract Win32 window calls to allow future packaging on Linux and macOS.</li>
+                  <li><strong>Automated Wi-Fi Pairing:</strong> Implement automatic mDNS service discovery for wireless debugging without manual port typing.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Capabilities / Skills Section -->
+    <section id="capabilities" class="section section-capabilities">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title">Tools &amp; Engineering Disciplines</h2>
+          <p class="section-subtitle">
+            Technologies, protocols, and system proficiencies applied across hands-on engineering projects.
+          </p>
+        </header>
+
+        <div class="capabilities-grid">
+          <div class="capability-card">
+            <h3 class="capability-title">Android Systems &amp; Internals</h3>
+            <ul class="capability-list">
+              <li>ADB protocol orchestration &amp; shell execution</li>
+              <li>Package manager (<code>pm</code>) &amp; Activity manager (<code>am</code>) automation</li>
+              <li>Scoped Storage architecture &amp; MediaStore content indexing</li>
+              <li>Logcat stream parsing &amp; runtime crash isolation</li>
+              <li>Wireless debugging setup (mDNS &amp; TLS pairing)</li>
+              <li>Hardware video encoding understanding (MediaCodec H.264/H.265)</li>
+            </ul>
+          </div>
+
+          <div class="capability-card">
+            <h3 class="capability-title">Python &amp; Desktop Engineering</h3>
+            <ul class="capability-list">
+              <li>Python 3.12 application architecture</li>
+              <li>PySide6 / Qt6 desktop GUI development</li>
+              <li>Multi-threading &amp; asynchronous I/O (<code>QThread</code>, worker signals)</li>
+              <li>Subprocess orchestration &amp; pipe communication</li>
+              <li>Win32 API integration (High-DPI coordinate calculations)</li>
+              <li>Automated testing with PyTest &amp; headless test harnesses</li>
+            </ul>
+          </div>
+
+          <div class="capability-card">
+            <h3 class="capability-title">Web &amp; Software Tooling</h3>
+            <ul class="capability-list">
+              <li>Semantic HTML5 &amp; modern CSS (flexbox, grid, custom properties)</li>
+              <li>Vanilla ES6+ JavaScript (zero-dependency UI logic)</li>
+              <li>Web Accessibility (WCAG AA standards, keyboard traps, aria states)</li>
+              <li>Git version control &amp; GitHub Pages deployment</li>
+              <li>GitHub CLI (<code>gh</code>) automated workflow integration</li>
+              <li>Technical writing &amp; structured case study documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">BACKGROUND &amp; CONTEXT</span>
+          <h2 class="section-title">About Fatur</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="about-paragraph">
+              I live and work in Japan within the civil construction industry. On active job sites, execution relies on physical endurance, strict adherence to safety standards, spatial precision, and systematic workflows. Every task—from surveying to structural reinforcement—demands discipline and patience.
+            </p>
+            <p class="about-paragraph">
+              Outside of work hours, I apply that same disciplined mindset to software engineering and automation. I am drawn to tools that solve real, observable problems—turning tedious, manual routines into reliable, repeatable software solutions.
+            </p>
+            <p class="about-paragraph">
+              Rather than assembling superficial copies or relying on generic templates, I take time to understand system internals: how Android handles process permissions, how desktop threading prevents UI lockups, and how software components coordinate under the hood.
+            </p>
+            <p class="about-paragraph">
+              I am focused on continuous learning, deepening my software engineering foundation, and building tools that make engineering work more productive.
+            </p>
+          </div>
+
+          <aside class="about-sidebar">
+            <div class="sidebar-block">
+              <span class="sidebar-label">PRIMARY LOCATION</span>
+              <span class="sidebar-value">Japan (Civil Infrastructure Industry)</span>
+            </div>
+            <div class="sidebar-block">
+              <span class="sidebar-label">STUDY FOCUS</span>
+              <span class="sidebar-value">Systems Programming, Python, Android, Desktop Automation</span>
+            </div>
+            <div class="sidebar-block">
+              <span class="sidebar-label">ENGINEERING APPROACH</span>
+              <span class="sidebar-value">First-principles thinking, verified benchmarks, minimal dependencies</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="contact-box">
+          <header class="contact-header">
+            <span class="section-kicker">CONTACT</span>
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-desc">
+              Interested in discussing software tooling, collaborating on open-source projects, or exploring technical opportunities? Reach out directly.
+            </p>
+          </header>
+
+          <div class="contact-actions">
+            <button type="button" class="btn btn-primary" id="copy-email-btn">
+              <span id="copy-btn-text">Copy Email (faturahon@gmail.com)</span>
+            </button>
+            <a href="mailto:faturahon@gmail.com" class="btn btn-secondary">
+              Open Email Client
+            </a>
+            <a href="https://github.com/learnhow-to" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              GitHub Profile
+              <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <div class="contact-meta">
+            <p class="meta-note">
+              Direct email: <strong class="user-select-all" id="email-address">faturahon@gmail.com</strong>
+            </p>
+            <p class="meta-note">
+              Active projects &amp; code repositories: <a href="https://github.com/learnhow-to" target="_blank" rel="noopener noreferrer" class="inline-link">github.com/learnhow-to</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">Fatur</span>
+        <span class="footer-copy">&copy; 2026. Handcrafted with semantic HTML, CSS, and Vanilla JavaScript.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#intro" class="footer-link">Back to top &uarr;</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Modal for Full Case Study -->
-  <div id="case-study-modal" class="modal-overlay" onclick="closeModalOnBackdrop(event)">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">&times;</button>
-      <div class="modal-header">
-        <span class="section-tag">DEEP DIVE CASE STUDY</span>
-        <h2 class="modal-title">DroidMirror Studio Architecture</h2>
+  <!-- Accessible Case Study Modal Dialog -->
+  <dialog id="case-study-dialog" class="case-study-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <header class="dialog-header">
+        <div>
+          <span class="section-kicker">TECHNICAL DEEP DIVE</span>
+          <h2 id="dialog-title" class="dialog-title">DroidMirror Studio Architecture</h2>
+        </div>
+        <button type="button" class="dialog-close-btn" id="dialog-close-btn" aria-label="Close case study dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="dialog-body">
+        <h4>1. Asynchronous Architecture &amp; The Qt Event Loop</h4>
+        <p>
+          In a desktop companion app, calling blocking subprocesses (such as <code>subprocess.run(["adb", "shell", ...])</code>) directly on the main UI thread causes the entire window to freeze, presenting "Not Responding" whenever a device takes longer than 200ms to respond.
+        </p>
+        <p>
+          DroidMirror Studio implements an asynchronous worker architecture utilizing Qt's <code>QThread</code> and signal-slot system. Each background task (package enumeration, logcat streaming, file pushing) runs in an isolated worker thread. Communication with the user interface is conducted strictly through strongly typed Qt signals, guaranteeing 60 FPS GUI responsiveness at all times.
+        </p>
+
+        <h4>2. High-DPI Windows Coordinate Mapping</h4>
+        <p>
+          Modern Windows displays utilize fractional scaling factors (125%, 150%, 175%). When launching external native application surfaces like scrcpy via standard Win32 <code>MoveWindow</code>, passing raw logical Qt points caused the window to appear quartered or positioned outside visual boundaries.
+        </p>
+        <p>
+          The solution was calculating physical device pixels directly via <code>window.devicePixelRatioF()</code> and executing Win32 <code>SetWindowPos</code> with the <code>SWP_FRAMECHANGED</code> flag. This forces SDL to recalculate its internal viewport dimensions, ensuring crisp, unscaled rendering on high-resolution displays.
+        </p>
+
+        <h4>3. Android Scoped Storage &amp; Intent Synchronization</h4>
+        <p>
+          Starting with Android 10 (API level 29), direct file system operations via ADB often place assets outside the reach of the media provider. Pushed photographs placed into <code>/sdcard/Download/</code> routinely went unnoticed by gallery applications, requiring developers to manually reboot the phone to test photo-picker features.
+        </p>
+        <p>
+          DroidMirror Studio solves this by inspecting file MIME types during drag-and-drop operations:
+        </p>
+        <ul class="dialog-list">
+          <li>Images (<code>.png</code>, <code>.jpg</code>, <code>.webp</code>) are routed to <code>/sdcard/Pictures/</code>.</li>
+          <li>Videos (<code>.mp4</code>, <code>.mkv</code>) are routed to <code>/sdcard/Movies/</code>.</li>
+          <li>APKs and general documents are routed to <code>/sdcard/Download/</code>.</li>
+        </ul>
+        <p>
+          Immediately upon transfer completion, the app broadcasts a system intent:
+          <br>
+          <code>am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d "file://&lt;path&gt;"</code>
+          <br>
+          and fires a device notification using <code>cmd notification post</code> to alert the user with sound and banner.
+        </p>
+
+        <h4>4. Logcat Fatal Exception Accumulator</h4>
+        <p>
+          Standard ADB logcat produces thousands of lines per second, making manual bug isolation tedious. DroidMirror Studio implements a multi-line accumulator thread that monitors the stream in real time. When signature patterns (such as <code>FATAL EXCEPTION</code> or <code>AndroidRuntime</code>) are parsed, it isolates the contiguous stacktrace, illuminates a high-contrast visual alert badge, and populates a dedicated text buffer with a 1-click clipboard export button.
+        </p>
       </div>
-      <div class="modal-body">
-        <h4>1. Architectural Philosophy</h4>
-        <p>
-          Instead of creating a bloated Electron app or building low-level video decoders in C++ from scratch, the system follows a pragmatic <em>"Developer Suite"</em> pattern: leveraging the battle-tested, hardware-accelerated `scrcpy 4.1` engine while orchestrating a clean, responsive PySide6 dashboard on top.
-        </p>
 
-        <h4>2. High-DPI Scaling Challenge & Solution</h4>
-        <p>
-          Modern Windows displays utilize 125% to 200% DPI scaling. Passing raw logical coordinates to Win32 `MoveWindow` caused the screen to appear tiny (quartered size). The solution was calculating physical device pixels via `devicePixelRatioF()` and using `SetWindowPos` with `SWP_FRAMECHANGED` to force an SDL surface redraw.
-        </p>
-
-        <h4>3. Scoped Storage & MediaStore Synchronization</h4>
-        <p>
-          Android 10+ restricts direct file access. When files were transferred to the device, native gallery apps ignored them. Implemented a smart routing mechanism (`/sdcard/Pictures/`, `/sdcard/Movies/`, `/sdcard/Download/`) coupled with `MEDIA_SCANNER_SCAN_FILE` broadcasts and `cmd notification post` to trigger real system audio and banner notifications on the phone.
-        </p>
-
-        <h4>4. Crash Catcher Logcat Pipeline</h4>
-        <p>
-          Runs a non-blocking `QThread` reading the logcat stream with time-indexed formatting. When `FATAL EXCEPTION` or `AndroidRuntime` signatures are parsed, a multi-line accumulator captures the exact stacktrace, illuminates a red alert badge, and enables 1-click clipboard export.
-        </p>
-      </div>
+      <footer class="dialog-footer">
+        <button type="button" class="btn btn-secondary" id="dialog-bottom-close-btn">
+          Close Window
+        </button>
+      </footer>
     </div>
-  </div>
+  </dialog>
 
-  <div id="toast" class="toast">Email copied to clipboard!</div>
+  <!-- Polite Screen Reader Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
   <script src="script.js"></script>
 </body>
