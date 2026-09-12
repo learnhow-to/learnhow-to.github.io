@@ -1,4 +1,4 @@
-﻿// Fatun - Modern Portfolio JavaScript
+// Fatun - Modern Portfolio JavaScript
 // Interactive UI logic, modal handling, toast notifications, and keyboard navigation
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
  * Open the case study deep-dive modal
  */
 function openModal(modalId = 'case-study-modal') {
-  const modal = document.getElementById(modalId);
+  const modal = document.getElementById(modalId) || document.getElementById('case-study-modal');
   if (modal) {
     modal.classList.add('active');
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
@@ -20,7 +20,7 @@ function openModal(modalId = 'case-study-modal') {
  * Close the open modal
  */
 function closeModal(modalId = 'case-study-modal') {
-  const modal = document.getElementById(modalId);
+  const modal = document.getElementById(modalId) || document.getElementById('case-study-modal');
   if (modal) {
     modal.classList.remove('active');
     document.body.style.overflow = ''; // Restore background scrolling
