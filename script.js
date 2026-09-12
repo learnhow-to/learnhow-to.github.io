@@ -50,7 +50,7 @@ document.addEventListener('keydown', (e) => {
  */
 function copyEmail() {
   const emailElem = document.getElementById('email-text');
-  const email = emailElem ? emailElem.textContent.trim() : 'fatun.dev@gmail.com';
+  const email = emailElem ? emailElem.textContent.trim() : 'faturahon@gmail.com';
 
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(email)

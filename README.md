@@ -39,7 +39,7 @@ Portfolio ini dibuat dengan **Pure Vanilla Web (HTML, CSS, JS)** tanpa perlu ins
 Jika ingin mengganti email, nama, atau menambahkan link media sosial:
 1. Buka file `index.html` menggunakan editor teks (Notepad, VS Code, atau Antigravity).
 2. Cari bagian berikut:
-   - **Email:** Cari teks `fatun.dev@gmail.com` dan ganti dengan email aslimu.
+   - **Email:** Alamat email sudah diatur ke `faturahon@gmail.com`.
    - **GitHub:** Link sudah disesuaikan ke profilmu: `https://github.com/learnhow-to`.
    - **LinkedIn:** Cari link `https://linkedin.com` (baris ~268) dan ubah ke profil LinkedIn kamu.
 3. Simpan file (`Ctrl + S`), lalu refresh browser kamu (`F5`).
