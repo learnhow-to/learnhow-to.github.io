@@ -68,13 +68,18 @@ function initMobileNav() {
 }
 
 /**
- * Case Study Dialog with Native showModal, Focus Trap & Restoration
+ * Case Study Dialogs with Native showModal, Focus Trap & Restoration
  */
 function initCaseStudyDialog() {
-  const dialog = document.getElementById('case-study-dialog');
-  const openBtn = document.getElementById('open-case-study-btn');
-  const closeBtn = document.getElementById('dialog-close-btn');
-  const bottomCloseBtn = document.getElementById('dialog-bottom-close-btn');
+  setupModalDialog('case-study-dialog', 'open-case-study-btn', 'dialog-close-btn', 'dialog-bottom-close-btn');
+  setupModalDialog('doboku-case-study-dialog', 'open-doboku-case-study-btn', 'doboku-dialog-close-btn', 'doboku-dialog-bottom-close-btn');
+}
+
+function setupModalDialog(dialogId, openBtnId, closeBtnId, bottomCloseBtnId) {
+  const dialog = document.getElementById(dialogId);
+  const openBtn = document.getElementById(openBtnId);
+  const closeBtn = document.getElementById(closeBtnId);
+  const bottomCloseBtn = document.getElementById(bottomCloseBtnId);
 
   if (!dialog || !openBtn) return;
 

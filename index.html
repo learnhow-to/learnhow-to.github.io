@@ -104,16 +104,16 @@
         </div>
 
         <h1 class="intro-headline">
-          Building practical tools that eliminate repetitive work between Android devices and Windows.
+          Building practical engineering tools for civil infrastructure and desktop automation.
         </h1>
 
         <p class="intro-lead">
-          I'm Fatur. By day, I work in civil construction on infrastructure projects in Japan. Outside work hours, I study software engineering and build automation tools to solve practical bottlenecks—focusing on desktop systems, Android internals, and cross-device workflows.
+          I'm Fatur. By day, I work in civil construction on infrastructure projects in Japan. Outside work hours, I study software engineering and build production-grade tools to solve practical bottlenecks—ranging from offline-first enterprise B2B SaaS for Japanese civil engineering to native desktop systems companions.
         </p>
 
         <div class="intro-actions">
-          <a href="#work" class="btn btn-primary">Explore DroidMirror Studio</a>
-          <a href="#case-study" class="btn btn-secondary">Read Case Study</a>
+          <a href="#work" class="btn btn-primary">Explore Featured Projects</a>
+          <a href="#case-study" class="btn btn-secondary">Read Case Studies</a>
           <a href="https://github.com/learnhow-to" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
             GitHub (learnhow-to)
             <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -126,36 +126,134 @@
 
         <div class="project-summary-box">
           <div class="summary-col">
-            <span class="summary-label">CURRENT PROJECT</span>
-            <span class="summary-val">DroidMirror Studio</span>
+            <span class="summary-label">FEATURED ENTERPRISE SAAS</span>
+            <span class="summary-val">DobokuTracker (v1.5)</span>
           </div>
           <div class="summary-col">
-            <span class="summary-label">STAGE</span>
-            <span class="summary-val">Functional Prototype (v0.2)</span>
+            <span class="summary-label">CLIENT &amp; DOMAIN</span>
+            <span class="summary-val">株式会社グレイス &bull; Tokyo Earthwork</span>
           </div>
           <div class="summary-col">
-            <span class="summary-label">CORE STACK</span>
-            <span class="summary-val">Python 3.12 &bull; PySide6 &bull; scrcpy &bull; ADB</span>
+            <span class="summary-label">CORE ARCHITECTURE</span>
+            <span class="summary-val">Offline-First &bull; IndexedDB &bull; React &bull; Node</span>
           </div>
           <div class="summary-col">
-            <span class="summary-label">HOST PLATFORM</span>
-            <span class="summary-val">Windows 10 / 11 (64-bit)</span>
+            <span class="summary-label">AUTOMATED TESTING</span>
+            <span class="summary-val">31/31 Vitest Passed (100%)</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Featured Project: DroidMirror Studio -->
+    <!-- Featured Projects Section -->
     <section id="work" class="section section-work">
       <div class="container">
         <header class="section-header">
-          <span class="section-kicker">FEATURED PROJECT</span>
-          <h2 class="section-title">DroidMirror Studio</h2>
+          <span class="section-kicker">FEATURED WORK</span>
+          <h2 class="section-title">Production &amp; Systems Projects</h2>
           <p class="section-subtitle">
-            A native Windows testing toolbox and screen mirroring companion for physical Android devices.
+            Engineered software solving authentic bottlenecks across civil construction operations and desktop automation.
           </p>
         </header>
 
+        <!-- Featured Project 1: DobokuTracker (土木トラッカー) -->
+        <article class="project-card" style="margin-bottom: 2.5rem;">
+          <div class="project-header">
+            <div>
+              <span class="status-indicator">
+                <span class="status-dot" style="background-color: #10b981;"></span>
+                <span>Production-Ready Enterprise B2B SaaS &bull; Client: 株式会社グレイス (GUREISU)</span>
+              </span>
+              <h3 class="project-name">DobokuTracker (土木トラッカー)</h3>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/learnhow-to/doboku-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                Source Code
+                <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-narrative">
+              <h4>The Problem</h4>
+              <p>
+                Japan's strict 2024 overtime regulations (<em>2024年問題</em>) put extreme operational pressure on civil engineering contractors. Yet, field sites remain heavily dependent on paper daily logs (<em>作業日報</em>). Foremen spend 15–30 minutes handwriting crew rosters, excavator hours, and fuel consumption in dusty or rainy conditions, while back-office staff spend days manually transcribing slips into Excel.
+              </p>
+              <ul class="narrative-list">
+                <li>Subterranean excavation pits and tunnel blackspots cause standard web apps to drop unsubmitted reports.</li>
+                <li>Over 90% of daily workers, heavy machinery, and tasks are identical, yet laboriously re-written every morning.</li>
+                <li>Carrying physical wooden chalkboards and tripods into muddy trenches slows down photo inspections required by MLIT (<em>国土交通省</em>).</li>
+                <li>Month-end CSV exports corrupt Japanese Kanji characters (<em>mojibake</em>) in Microsoft Excel for Windows.</li>
+              </ul>
+
+              <h4>The Solution</h4>
+              <p>
+                An industrial-grade, offline-first dual-interface B2B SaaS platform engineered for <strong>株式会社グレイス (GUREISU)</strong>. Utilizing browser IndexedDB with Optimistic Concurrency Control (HTTP 409) and idempotent sync queues, it enables field foremen to complete daily reports in under 30 seconds via intelligent previous-day cloning (<em>前日コピー</em>), generates MLIT-compliant digital inspection chalkboards directly on photos via HTML5 Canvas (<em>電子黒板</em>), and provides a 3-tier digital Hanko (<em>電子印鑑</em>) approval workflow.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tag">React 18</span>
+                <span class="tag">TypeScript 5.7</span>
+                <span class="tag">Node.js &bull; Express</span>
+                <span class="tag">PostgreSQL / PGlite</span>
+                <span class="tag">IndexedDB (Offline-First)</span>
+                <span class="tag">HTML5 Canvas (Kokuban)</span>
+                <span class="tag">ExcelJS</span>
+                <span class="tag">31/31 Vitest (100%)</span>
+              </div>
+            </div>
+
+            <!-- Feature Classification Matrix -->
+            <div class="feature-status-panel">
+              <h4 class="feature-panel-title">Implementation Status Breakdown</h4>
+              
+              <div class="feature-group">
+                <div class="feature-status-badge status-verified">VERIFIED &amp; FUNCTIONAL (v1.5)</div>
+                <ul class="feature-item-list">
+                  <li><strong>Offline-First Engine:</strong> IndexedDB local persistence with background mutex sync queue and idempotency keys.</li>
+                  <li><strong>Optimistic Concurrency Control:</strong> Document version validation returning HTTP 409 on collisions with visual diff resolution.</li>
+                  <li><strong>前日コピー機能 (Deep Replication):</strong> Replicates workers, machinery, and tasks with clean IDs, slashing report time from 3m to 30s.</li>
+                  <li><strong>電子黒板 (Digital Kokuban):</strong> Client-side Canvas engine overlaying MLIT-compliant timber-framed green chalkboards on site photos.</li>
+                  <li><strong>電子印鑑 (3-Tier Hanko):</strong> Dynamic vermilion seal stamps (担当・職長 ➔ 現場代理人 ➔ 所長・確認) with enforced Separation of Duties.</li>
+                  <li><strong>月次カレンダー表示:</strong> 31-day compliance grid with real-time submission KPIs (提出率) in PC Backoffice.</li>
+                  <li><strong>Corporate Reporting Engine:</strong> Accounting-standard .xlsx files via ExcelJS and zero-mojibake UTF-8 BOM CSV exports.</li>
+                </ul>
+              </div>
+
+              <div class="feature-group">
+                <div class="feature-status-badge status-experimental">VERIFIED COMPATIBILITY</div>
+                <ul class="feature-item-list">
+                  <li><strong>Bilingual i18n Engine:</strong> Japanese and Indonesian language switcher with persistent local storage.</li>
+                  <li><strong>Database Flexibility:</strong> Embedded WebAssembly PGlite for zero-install dev, full PostgreSQL 16 for production.</li>
+                </ul>
+              </div>
+
+              <div class="feature-group">
+                <div class="feature-status-badge status-roadmap">ROADMAP / NEXT RELEASE</div>
+                <ul class="feature-item-list">
+                  <li>Direct S3 / Cloudflare R2 bucket integration for heavy high-res site photos.</li>
+                  <li>GPS geo-fencing tag verification for worker arrival.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <button type="button" class="btn btn-primary" id="open-doboku-case-study-btn">
+              Read DobokuTracker Case Study &amp; Benchmarks
+            </button>
+            <a href="https://github.com/learnhow-to/doboku-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              View Repository on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Featured Project 2: DroidMirror Studio -->
         <article class="project-card">
           <div class="project-header">
             <div>
@@ -486,6 +584,19 @@
 
         <div class="capabilities-grid">
           <div class="capability-card">
+            <h3 class="capability-title">Enterprise B2B SaaS &amp; Systems</h3>
+            <ul class="capability-list">
+              <li>Offline-First architecture with IndexedDB (<code>idb</code>) &amp; sync queues</li>
+              <li>Optimistic Concurrency Control (HTTP 409) &amp; idempotent mutations</li>
+              <li>Full-stack TypeScript (React 18, Node.js, Express, REST APIs)</li>
+              <li>Relational database modeling (PostgreSQL, PGlite, multi-tenancy &amp; RBAC)</li>
+              <li>HTML5 Canvas dynamic drawing engines (MLIT Kokuban overlay)</li>
+              <li>Automated testing (Vitest integration &amp; concurrency test suites)</li>
+              <li>Corporate reporting engines (ExcelJS .xlsx &amp; UTF-8 BOM CSV exports)</li>
+            </ul>
+          </div>
+
+          <div class="capability-card">
             <h3 class="capability-title">Android Systems &amp; Internals</h3>
             <ul class="capability-list">
               <li>ADB protocol orchestration &amp; shell execution</li>
@@ -621,7 +732,72 @@
     </div>
   </footer>
 
-  <!-- Accessible Case Study Modal Dialog -->
+  <!-- Accessible Case Study Modal Dialog: DobokuTracker -->
+  <dialog id="doboku-case-study-dialog" class="case-study-dialog" aria-labelledby="doboku-dialog-title">
+    <div class="dialog-inner">
+      <header class="dialog-header">
+        <div>
+          <span class="section-kicker">TECHNICAL DEEP DIVE</span>
+          <h2 id="doboku-dialog-title" class="dialog-title">DobokuTracker Architecture &amp; Engineering</h2>
+        </div>
+        <button type="button" class="dialog-close-btn" id="doboku-dialog-close-btn" aria-label="Close DobokuTracker case study dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="dialog-body">
+        <h4>1. Offline-First IndexedDB Engine &amp; Optimistic Concurrency Control</h4>
+        <p>
+          Construction sites in Japan frequently operate in subterranean excavations, mountainous slopes, and tunnels where 4G/5G connections drop completely. Standard web applications cause catastrophic loss of unsaved daily report inputs in these conditions.
+        </p>
+        <p>
+          DobokuTracker solves this with a two-tier persistence architecture: all form mutations and worker rosters write immediately to browser <code>IndexedDB</code> before attempting network dispatch. To prevent race conditions when multiple supervisors sync offline drafts simultaneously, the database schema implements <strong>Optimistic Concurrency Control</strong> with integer <code>version</code> checking. Conflicting updates return HTTP <code>409 Conflict</code>, triggering an in-app visual diff comparison without discarding the foreman's inputs. Network dispatches use an <code>X-Idempotency-Key</code> mutex queue with exponential backoff to eliminate duplicate records during packet drops.
+        </p>
+
+        <h4>2. HTML5 Canvas MLIT Digital Kokuban (電子黒板) Engine</h4>
+        <p>
+          Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 国土交通省) enforces strict inspection photo guidelines: every photographic proof of work must clearly display an inspection chalkboard with project title (工事件名), trade (工種), stationing (測点 STA), and contractor identity. Carrying physical wooden chalkboards and tripods into muddy trenches slows down surveying teams.
+        </p>
+        <p>
+          DobokuTracker embeds a client-side HTML5 Canvas overlay engine. Before photos are compressed and uploaded, it programmatically renders a timber-framed green blackboard directly onto the image raster. The overlay dynamically paints crisp chalk-white lettering (<code>#F8FAFC</code>) with subtle drop shadows for high legibility, completely eliminating the need for physical chalkboards on site.
+        </p>
+
+        <h4>3. 3-Tier Digital Hanko (電子印鑑) &amp; Separation of Duties</h4>
+        <p>
+          Japanese corporate culture and legal compliance require hierarchical vermilion seals on field approvals. DobokuTracker implements dynamic SVG/Canvas red Hanko stamps with family kanji, inspection dates, and slight rotational variations mimicking real physical impressions across a strict 3-tier hierarchy: <strong>【担当・職長】</strong>, <strong>【現場代理人】</strong>, and <strong>【所長・確認】</strong>.
+        </p>
+        <p>
+          To prevent payroll fraud and ensure governance, the backend state machine strictly enforces <strong>Separation of Duties</strong>: reports created by a user cannot be self-approved by the same user. Once marked as <code>APPROVED</code>, report records are cryptographically locked and immutable.
+        </p>
+
+        <h4>4. Corporate Reporting Engine (ExcelJS &amp; Zero-Mojibake UTF-8 BOM CSV)</h4>
+        <p>
+          At month-end closing, administrative personnel previously spent 2–3 days copying paper logs into accounting spreadsheets. DobokuTracker automates this using <code>ExcelJS</code> to generate official <code>.xlsx</code> workbooks styled with corporate teal palette (<code>#0F766E</code>), Meiryo typography, auto-computed formula sums, and Japanese accounting double underlines.
+        </p>
+        <p>
+          For payroll ERP ingestion, the system outputs CSV files with a prepended UTF-8 Byte Order Mark (<code>\uFEFF</code>). This eliminates the pervasive character corruption (<em>mojibake</em>) that plagues standard UTF-8 CSVs opened in Microsoft Excel on Japanese Windows machines.
+        </p>
+
+        <h4>5. Verified Quality Metrics &amp; Test Suite</h4>
+        <ul class="dialog-list">
+          <li><strong>31/31 Vitest Integration Tests Passed (100%):</strong> Verifying multi-tenant isolation, cross-project RBAC defenses, concurrency 409 collisions, and batch approvals.</li>
+          <li><strong>~85% Reduction in Field Input Time:</strong> From 3–5 minutes down to ~30 seconds via deep previous-day replication (<em>前日コピー</em>).</li>
+          <li><strong>Production Bundle:</strong> 316 kB total JS bundle (gzip 87 kB) for near-instant rendering on mobile 3G networks.</li>
+        </ul>
+      </div>
+
+      <footer class="dialog-footer">
+        <button type="button" class="btn btn-secondary" id="doboku-dialog-bottom-close-btn">
+          Close Window
+        </button>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- Accessible Case Study Modal Dialog: DroidMirror Studio -->
   <dialog id="case-study-dialog" class="case-study-dialog" aria-labelledby="dialog-title">
     <div class="dialog-inner">
       <header class="dialog-header">
