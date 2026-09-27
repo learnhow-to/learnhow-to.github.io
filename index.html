@@ -26,7 +26,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
   <!-- Skip link for keyboard accessibility -->
@@ -124,22 +128,45 @@
           </a>
         </div>
 
-        <div class="project-summary-box">
-          <div class="summary-col">
-            <span class="summary-label">FEATURED ENTERPRISE SAAS</span>
-            <span class="summary-val">DobokuTracker (v1.5)</span>
+        <div class="project-summary-grid" style="display: flex; flex-direction: column; gap: 14px; margin-top: 10px;">
+          <!-- Featured Summary 1: DobokuTracker -->
+          <div class="project-summary-box">
+            <div class="summary-col">
+              <span class="summary-label">FEATURED B2B SAAS (01)</span>
+              <span class="summary-val">DobokuTracker (土木トラッカー)</span>
+            </div>
+            <div class="summary-col">
+              <span class="summary-label">CLIENT &amp; DOMAIN</span>
+              <span class="summary-val">Confidential Tokyo Contractor</span>
+            </div>
+            <div class="summary-col">
+              <span class="summary-label">CORE ARCHITECTURE</span>
+              <span class="summary-val">Offline-First &bull; IndexedDB &bull; React &bull; Node</span>
+            </div>
+            <div class="summary-col">
+              <span class="summary-label">VERIFIED METRICS</span>
+              <span class="summary-val">31/31 Vitest Passed (100%)</span>
+            </div>
           </div>
-          <div class="summary-col">
-            <span class="summary-label">CLIENT &amp; DOMAIN</span>
-            <span class="summary-val">Confidential Client &bull; Tokyo Earthwork</span>
-          </div>
-          <div class="summary-col">
-            <span class="summary-label">CORE ARCHITECTURE</span>
-            <span class="summary-val">Offline-First &bull; IndexedDB &bull; React &bull; Node</span>
-          </div>
-          <div class="summary-col">
-            <span class="summary-label">AUTOMATED TESTING</span>
-            <span class="summary-val">31/31 Vitest Passed (100%)</span>
+
+          <!-- Featured Summary 2: DroidMirror Studio -->
+          <div class="project-summary-box">
+            <div class="summary-col">
+              <span class="summary-label">FEATURED SYSTEMS TOOL (02)</span>
+              <span class="summary-val">DroidMirror Studio (ドロイドミラー)</span>
+            </div>
+            <div class="summary-col">
+              <span class="summary-label">DOMAIN &amp; RUNTIME</span>
+              <span class="summary-val">Android Hardware QA &bull; Python / Qt6</span>
+            </div>
+            <div class="summary-col">
+              <span class="summary-label">CORE ARCHITECTURE</span>
+              <span class="summary-val">scrcpy Hardware Stream &bull; Win32 High-DPI</span>
+            </div>
+            <div class="summary-col">
+              <span class="summary-label">VERIFIED METRICS</span>
+              <span class="summary-val">Sub-100MB RAM &bull; 60 FPS Video</span>
+            </div>
           </div>
         </div>
       </div>
@@ -154,10 +181,20 @@
           <p class="section-subtitle">
             Engineered software solving authentic bottlenecks across civil construction operations and desktop automation.
           </p>
+          <div class="project-quick-links" style="display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap;">
+            <a href="#project-doboku" class="tag" style="text-decoration: none; padding: 6px 14px; font-weight: 600; color: var(--text-primary); border: 1px solid var(--border-subtle); display: inline-flex; align-items: center; gap: 6px;">
+              <span class="status-dot" style="background-color: #10b981; width: 8px; height: 8px;"></span>
+              Project 01: DobokuTracker (土木トラッカー) &darr;
+            </a>
+            <a href="#project-droidmirror" class="tag" style="text-decoration: none; padding: 6px 14px; font-weight: 600; color: var(--text-primary); border: 1px solid var(--border-subtle); display: inline-flex; align-items: center; gap: 6px;">
+              <span class="status-dot" style="background-color: #3b82f6; width: 8px; height: 8px;"></span>
+              Project 02: DroidMirror Studio (ドロイドミラー) &darr;
+            </a>
+          </div>
         </header>
 
         <!-- Featured Project 1: DobokuTracker (土木トラッカー) -->
-        <article class="project-card" style="margin-bottom: 2.5rem;">
+        <article id="project-doboku" class="project-card" style="margin-bottom: 2.5rem;">
           <div class="project-header">
             <div>
               <span class="status-indicator">
@@ -254,7 +291,7 @@
         </article>
 
         <!-- Featured Project 2: DroidMirror Studio (ドロイドミラー) -->
-        <article class="project-card">
+        <article id="project-droidmirror" class="project-card">
           <div class="project-header">
             <div>
               <span class="status-indicator">
@@ -878,6 +915,6 @@
   <!-- Polite Screen Reader Toast Notification -->
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

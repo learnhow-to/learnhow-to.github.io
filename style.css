@@ -1145,6 +1145,11 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .project-summary-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
   .benchmark-meta-box {
     grid-template-columns: 1fr;
   }
